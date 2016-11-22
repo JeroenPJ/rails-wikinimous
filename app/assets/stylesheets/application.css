@@ -13,3 +13,154 @@
  *= require_tree .
  *= require_self
  */
+body, html {
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.link {
+  color: #60abf5;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  margin: 0;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #111;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+}
+
+.navbar h2 {
+  display: inline;
+  color: #fff;
+}
+
+.navbar-link {
+  display: inline;
+  color: #fff;
+  position: absolute;
+  line-height: 25px;
+  right: 20px;
+}
+
+.navbar-link:hover {
+  color: #fff;
+}
+
+.container {
+  padding: 80px 100px;
+  width: 800px;
+  background-color: #fff;
+}
+
+.title {
+  font-family: 'Lora', serif;
+  font-size: 25px;
+  margin: 25px 0 0 0;
+  color: #333;
+}
+
+h5 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  color: #bbb;
+  margin: 0 0 25px 0;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.article-content {
+  margin: 40px 0;
+  width: 100%;
+  text-align: justify;
+}
+
+ul {
+  list-style: none;
+}
+
+li > a.title {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  color: #444;
+  line-height: 2;
+}
+
+li > a:hover {
+  color: #000;
+}
+
+/* FORM CSS */
+label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #555;
+}
+
+input, textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000;
+}
+
+#article_title {
+  min-width: 600px;
+}
+
+#article_content {
+  min-width: 600px;
+  min-height: 300px;
+}
+
+.kramdownhelp {
+  margin-top: 30px;
+  border-radius: 10px;
+  border: 1px solid #306baa;
+  background-color: #e1e1ff;
+  padding: 15px;
+}
+
+.kramdownhelp .kramdownhelp-card {
+  border: 1px solid #306baa;
+  background-color: #fff;
+  height: 100px;
+  padding: 10px;
+  margin: 5px;
+  float: left;
+}
+
+
+
+

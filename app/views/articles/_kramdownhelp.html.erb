@@ -1,0 +1,20 @@
+<div class="kramdownhelp">
+  <h4>Markup options:</h4>
+  <% markup_array = [ "# header",                          %>
+  <%                  "## header",                         %>
+  <%                  "### header",                        %>
+  <%                  "#### header",                       %>
+  <%                  "##### header",                      %>
+  <%                  "* unordered list",                  %>
+  <%                  "1. ordered\n2. list",               %>
+  <%                  "~~~~\ncode block\n~~~~",            %>
+  <%                  "~~~~ ruby\nruby code block\n~~~~"   %>
+  <%                  ] %>
+  <% markup_array.each do |markup| %>
+  <div class="kramdownhelp-card">
+    <code><%= markup %></code>
+    <%= sanitize Kramdown::Document.new(markup).to_html %>
+  </div>
+  <% end %>
+  <br style='clear: both'>
+</div>

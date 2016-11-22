@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsWikinimous</title>
+    <title>Jeroen's Wikinimous</title>
     <%= csrf_meta_tags %>
+
+    <link href="https://fonts.googleapis.com/css?family=Lora:700|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class='navbar text-center'>
+      <%= link_to root_path do %>
+        <h2>Jeroen's Wikinimous</h2>
+      <% end %>
+      <%= link_to "Create a new article", new_article_path, { class: 'navbar-link link' } %>
+    </div>
+
+    <div class='container'>
+      <div class='row'>
+        <div class='col-xs-12'>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
